@@ -1,0 +1,17 @@
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\bin\Debug\net8.0\Review.Infrastructure.deps.json
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\bin\Debug\net8.0\Review.Infrastructure.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\bin\Debug\net8.0\Review.Infrastructure.pdb
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\bin\Debug\net8.0\Review.Application.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\bin\Debug\net8.0\Review.Domain.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\bin\Debug\net8.0\Review.Application.pdb
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\bin\Debug\net8.0\Review.Domain.pdb
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\Review.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\Review.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\Review.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\Review.Infrastructure.AssemblyInfo.cs
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\Review.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\Review.I.C0416178.Up2Date
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\Review.Infrastructure.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\refint\Review.Infrastructure.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\Review.Infrastructure.pdb
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Infrastructure\obj\Debug\net8.0\ref\Review.Infrastructure.dll

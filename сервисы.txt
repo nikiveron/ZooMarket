@@ -1,0 +1,136 @@
+Catalog, User, Product, Order, Review, Cart, Payment
+
+Catalog
+User
+Product
+Order
+Review
+Payment
+
+dotnet build Catalog.sln
+dotnet build User.sln
+dotnet build Product.sln
+dotnet build Order.sln
+dotnet build Review.sln
+dotnet build Payment.sln
+
+mkdir Catalog
+mkdir User 
+mkdir Product
+mkdir Order 
+mkdir Review 
+mkdir Cart
+mkdir Payment
+
+dotnet new sln -n Catalog
+dotnet new webapi -n Catalog.API -f net8.0
+dotnet new classlib -n Catalog.Application -f net8.0
+dotnet new classlib -n Catalog.Domain -f net8.0
+dotnet new classlib -n Catalog.Infrastructure -f net8.0
+dotnet sln add Catalog.API/
+dotnet sln add Catalog.Application/
+dotnet sln add Catalog.Domain/
+dotnet sln add Catalog.Infrastructure/
+
+dotnet add Catalog.Application reference Catalog.Domain
+dotnet add Catalog.Infrastructure reference Catalog.Application
+dotnet add Catalog.Infrastructure reference Catalog.Domain
+dotnet add Catalog.API reference Catalog.Application
+dotnet add Catalog.API reference Catalog.Infrastructure
+
+dotnet new sln -n User
+dotnet new webapi -n User.API -f net8.0
+dotnet new classlib -n User.Application -f net8.0
+dotnet new classlib -n User.Domain -f net8.0
+dotnet new classlib -n User.Infrastructure -f net8.0
+dotnet sln add User.API/
+dotnet sln add User.Application/
+dotnet sln add User.Domain/
+dotnet sln add User.Infrastructure/
+
+dotnet add User.Application reference User.Domain
+dotnet add User.Infrastructure reference User.Application
+dotnet add User.Infrastructure reference User.Domain
+dotnet add User.API reference User.Application
+dotnet add User.API reference User.Infrastructure
+
+dotnet new sln -n Product
+dotnet new webapi -n Product.API -f net8.0
+dotnet new classlib -n Product.Application -f net8.0
+dotnet new classlib -n Product.Domain -f net8.0
+dotnet new classlib -n Product.Infrastructure -f net8.0
+dotnet sln add Product.API/
+dotnet sln add Product.Application/
+dotnet sln add Product.Domain/
+dotnet sln add Product.Infrastructure/
+
+dotnet add Product.Application reference Product.Domain
+dotnet add Product.Infrastructure reference Product.Application
+dotnet add Product.Infrastructure reference Product.Domain
+dotnet add Product.API reference Product.Application
+dotnet add Product.API reference Product.Infrastructure
+
+dotnet new sln -n Order
+dotnet new webapi -n Order.API -f net8.0
+dotnet new classlib -n Order.Application -f net8.0
+dotnet new classlib -n Order.Domain -f net8.0
+dotnet new classlib -n Order.Infrastructure -f net8.0
+dotnet sln add Order.API/
+dotnet sln add Order.Application/
+dotnet sln add Order.Domain/
+dotnet sln add Order.Infrastructure/
+
+dotnet add Order.Application reference Order.Domain
+dotnet add Order.Infrastructure reference Order.Application
+dotnet add Order.Infrastructure reference Order.Domain
+dotnet add Order.API reference Order.Application
+dotnet add Order.API reference Order.Infrastructure
+
+dotnet new sln -n Review
+dotnet new webapi -n Review.API -f net8.0
+dotnet new classlib -n Review.Application -f net8.0
+dotnet new classlib -n Review.Domain -f net8.0
+dotnet new classlib -n Review.Infrastructure -f net8.0
+dotnet sln add Review.API/
+dotnet sln add Review.Application/
+dotnet sln add Review.Domain/
+dotnet sln add Review.Infrastructure/
+
+dotnet add Review.Application reference Review.Domain
+dotnet add Review.Infrastructure reference Review.Application
+dotnet add Review.Infrastructure reference Review.Domain
+dotnet add Review.API reference Review.Application
+dotnet add Review.API reference Review.Infrastructure
+
+dotnet new sln -n Cart
+dotnet new webapi -n Cart.API -f net8.0
+dotnet new classlib -n Cart.Application -f net8.0
+dotnet new classlib -n Cart.Domain -f net8.0
+dotnet new classlib -n Cart.Infrastructure -f net8.0
+dotnet sln add Cart.API/
+dotnet sln add Cart.Application/
+dotnet sln add Cart.Domain/
+dotnet sln add Cart.Infrastructure/
+
+dotnet add Cart.Application reference Cart.Domain
+dotnet add Cart.Infrastructure reference Cart.Application
+dotnet add Cart.Infrastructure reference Cart.Domain
+dotnet add Cart.API reference Cart.Application
+dotnet add Cart.API reference Cart.Infrastructure
+
+dotnet new sln -n Payment
+dotnet new webapi -n Payment.API -f net8.0
+dotnet new classlib -n Payment.Application -f net8.0
+dotnet new classlib -n Payment.Domain -f net8.0
+dotnet new classlib -n Payment.Infrastructure -f net8.0
+dotnet sln add Payment.API/
+dotnet sln add Payment.Application/
+dotnet sln add Payment.Domain/
+dotnet sln add Payment.Infrastructure/
+
+dotnet add Payment.Application reference Payment.Domain
+dotnet add Payment.Infrastructure reference Payment.Application
+dotnet add Payment.Infrastructure reference Payment.Domain
+dotnet add Payment.API reference Payment.Application
+dotnet add Payment.API reference Payment.Infrastructure
+

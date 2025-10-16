@@ -1,0 +1,15 @@
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\bin\Debug\net8.0\User.Application.deps.json
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\bin\Debug\net8.0\User.Application.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\bin\Debug\net8.0\User.Application.pdb
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\bin\Debug\net8.0\User.Domain.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\bin\Debug\net8.0\User.Domain.pdb
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\User.Application.csproj.AssemblyReference.cache
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\User.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\User.Application.AssemblyInfoInputs.cache
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\User.Application.AssemblyInfo.cs
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\User.Application.csproj.CoreCompileInputs.cache
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\User.App.1A218819.Up2Date
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\User.Application.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\refint\User.Application.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\User.Application.pdb
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Application\obj\Debug\net8.0\ref\User.Application.dll
