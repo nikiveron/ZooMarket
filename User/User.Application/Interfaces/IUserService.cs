@@ -1,7 +1,7 @@
-﻿using User.Application.DTOs;
-using User.Application.Features.Users;
+﻿using Identity.Application.DTOs;
+using Identity.Application.Features.Users;
 
-namespace User.Application.Interfaces;
+namespace Identity.Application.Interfaces;
 
 public interface IUserService
 {

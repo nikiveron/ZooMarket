@@ -11,6 +11,8 @@ public record CreateOrderCommand(
 
 public record CreateOrderItem(
     Guid ProductId,
+    string ProductName,
+    Decimal UnitPrice,
     int Quantity);
 
 public record UpdateOrderStatusCommand(

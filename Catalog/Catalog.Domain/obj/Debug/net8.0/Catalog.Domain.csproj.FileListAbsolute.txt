@@ -9,3 +9,15 @@ C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.Domain\obj\Debug\net8.0
 C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.Domain\obj\Debug\net8.0\refint\Catalog.Domain.dll
 C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.pdb
 C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.Domain\obj\Debug\net8.0\ref\Catalog.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\bin\Debug\net8.0\Catalog.Domain.deps.json
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\bin\Debug\net8.0\Catalog.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\bin\Debug\net8.0\Catalog.Domain.pdb
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.AssemblyInfoInputs.cache
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.AssemblyInfo.cs
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.sourcelink.json
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\refint\Catalog.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.pdb
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\ref\Catalog.Domain.dll

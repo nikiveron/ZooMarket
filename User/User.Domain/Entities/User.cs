@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace User.Domain.Entities;
+namespace Identity.Domain.Entities;
 
 public class User : BaseEntity
 {

@@ -206,14 +206,14 @@
           }
         }
       },
-      "Identity.Domain/1.0.0": {
+      "User.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/Identity.Domain.dll": {}
+          "bin/placeholder/User.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Identity.Domain.dll": {}
+          "bin/placeholder/User.Domain.dll": {}
         }
       }
     }
@@ -591,32 +591,37 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Identity.Domain/1.0.0": {
+    "User.Domain/1.0.0": {
       "type": "project",
-      "path": "../User.Domain/Identity.Domain.csproj",
-      "msbuildProject": "../User.Domain/Identity.Domain.csproj"
+      "path": "../User.Domain/User.Domain.csproj",
+      "msbuildProject": "../User.Domain/User.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Identity.Domain >= 1.0.0",
-      "MediatR >= 13.0.0"
+      "MediatR >= 13.0.0",
+      "User.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikiv\\.nuget\\packages\\": {}
+    "C:\\Users\\nikiv\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj",
-      "projectName": "Identity.Application",
-      "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj",
+      "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj",
+      "projectName": "User.Application",
+      "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj",
       "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\obj\\",
+      "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -624,14 +629,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\Identity.Domain.csproj": {
-              "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\Identity.Domain.csproj"
+            "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj": {
+              "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj"
             }
           }
         }
@@ -673,7 +679,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
