@@ -1,6 +1,6 @@
-﻿using User.Domain.Entities;
+﻿using Identity.Domain.Entities;
 
-namespace User.Domain.Common;
+namespace Identity.Domain.Common;
 
 public interface IRepository<T> where T : BaseEntity
 {

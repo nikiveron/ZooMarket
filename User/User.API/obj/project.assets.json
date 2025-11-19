@@ -481,6 +481,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+<<<<<<< HEAD
       "Identity.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -519,6 +520,46 @@
         },
         "runtime": {
           "bin/placeholder/Identity.Infrastructure.dll": {}
+=======
+      "User.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MediatR": "13.0.0",
+          "User.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/User.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/User.Application.dll": {}
+        }
+      },
+      "User.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/User.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/User.Domain.dll": {}
+        }
+      },
+      "User.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.10",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
+          "User.Application": "1.0.0",
+          "User.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/User.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/User.Infrastructure.dll": {}
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
         }
       }
     }
@@ -1450,6 +1491,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
+<<<<<<< HEAD
     "Identity.Application/1.0.0": {
       "type": "project",
       "path": "../User.Application/Identity.Application.csproj",
@@ -1464,30 +1506,56 @@
       "type": "project",
       "path": "../User.Infrastructure/Identity.Infrastructure.csproj",
       "msbuildProject": "../User.Infrastructure/Identity.Infrastructure.csproj"
+=======
+    "User.Application/1.0.0": {
+      "type": "project",
+      "path": "../User.Application/User.Application.csproj",
+      "msbuildProject": "../User.Application/User.Application.csproj"
+    },
+    "User.Domain/1.0.0": {
+      "type": "project",
+      "path": "../User.Domain/User.Domain.csproj",
+      "msbuildProject": "../User.Domain/User.Domain.csproj"
+    },
+    "User.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../User.Infrastructure/User.Infrastructure.csproj",
+      "msbuildProject": "../User.Infrastructure/User.Infrastructure.csproj"
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+<<<<<<< HEAD
       "Identity.Application >= 1.0.0",
       "Identity.Infrastructure >= 1.0.0",
+=======
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
       "Microsoft.AspNetCore.OpenApi >= 8.0.20",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "User.Application >= 1.0.0",
+      "User.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikiv\\.nuget\\packages\\": {}
+    "C:\\Users\\nikiv\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\Identity.API.csproj",
-      "projectName": "Identity.API",
-      "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\Identity.API.csproj",
+      "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\User.API.csproj",
+      "projectName": "User.API",
+      "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\User.API.csproj",
       "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\obj\\",
+      "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1495,17 +1563,26 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj": {
               "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj"
             },
             "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Identity.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Identity.Infrastructure.csproj"
+=======
+            "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj": {
+              "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj"
+            },
+            "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Infrastructure\\User.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Infrastructure\\User.Infrastructure.csproj"
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
             }
           }
         }
@@ -1554,9 +1631,10 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
+<<<<<<< HEAD
   },
   "logs": [
     {
@@ -1578,4 +1656,7 @@
       ]
     }
   ]
+=======
+  }
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
 }

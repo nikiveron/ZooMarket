@@ -9,3 +9,15 @@ C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Domain\obj\Debug\net8.0\User.
 C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Domain\obj\Debug\net8.0\refint\User.Domain.dll
 C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Domain\obj\Debug\net8.0\User.Domain.pdb
 C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Domain\obj\Debug\net8.0\ref\User.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\bin\Debug\net8.0\User.Domain.deps.json
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\bin\Debug\net8.0\User.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\bin\Debug\net8.0\User.Domain.pdb
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\User.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\User.Domain.AssemblyInfoInputs.cache
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\User.Domain.AssemblyInfo.cs
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\User.Domain.csproj.CoreCompileInputs.cache
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\User.Domain.sourcelink.json
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\User.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\refint\User.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\User.Domain.pdb
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Domain\obj\Debug\net8.0\ref\User.Domain.dll

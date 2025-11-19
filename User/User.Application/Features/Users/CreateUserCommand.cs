@@ -1,7 +1,7 @@
-﻿using User.Application.DTOs;
-using MediatR;
+﻿using MediatR;
+using Identity.Application.DTOs;
 
-namespace User.Application.Features.Users;
+namespace Identity.Application.Features.Users;
 
 public record CreateUserCommand(
     string Email,

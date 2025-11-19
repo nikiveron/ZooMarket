@@ -9,3 +9,15 @@ C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Domain\obj\Debug\net8.0\Ident
 C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Domain\obj\Debug\net8.0\refint\Identity.Domain.dll
 C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Domain\obj\Debug\net8.0\Identity.Domain.pdb
 C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Domain\obj\Debug\net8.0\ref\Identity.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\bin\Debug\net8.0\Identity.Domain.deps.json
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\bin\Debug\net8.0\Identity.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\bin\Debug\net8.0\Identity.Domain.pdb
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\Identity.Domain.AssemblyInfoInputs.cache
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\Identity.Domain.AssemblyInfo.cs
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\Identity.Domain.csproj.CoreCompileInputs.cache
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\Identity.Domain.sourcelink.json
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\Identity.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\refint\Identity.Domain.dll
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\Identity.Domain.pdb
+C:\Users\nikiv\Desktop\MyProj\ZooMarket\Identity\User.Domain\obj\Debug\net8.0\ref\Identity.Domain.dll

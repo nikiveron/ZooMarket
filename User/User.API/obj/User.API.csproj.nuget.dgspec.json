@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\User.API.csproj": {}
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\User.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\User.API.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\User.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\User.API.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\User.API.csproj",
         "projectName": "User.API",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\User.API.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\User.API.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\User.Application.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\User.Application.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj"
               },
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\User.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\User.Infrastructure.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Infrastructure\\User.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Infrastructure\\User.Infrastructure.csproj"
               }
             }
           }
@@ -81,21 +86,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\User.Application.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\User.Application.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj",
         "projectName": "User.Application",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\User.Application.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,14 +112,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\User.Domain.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\User.Domain.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj"
               }
             }
           }
@@ -152,21 +162,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\User.Domain.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\User.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj",
         "projectName": "User.Domain",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\User.Domain.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -174,6 +188,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -213,21 +228,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\User.Infrastructure.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Infrastructure\\User.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\User.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Infrastructure\\User.Infrastructure.csproj",
         "projectName": "User.Infrastructure",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\User.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Infrastructure\\User.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,17 +254,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\User.Application.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\User.Application.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj"
               },
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\User.Domain.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Domain\\User.Domain.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Domain\\User.Domain.csproj"
               }
             }
           }
@@ -291,7 +311,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

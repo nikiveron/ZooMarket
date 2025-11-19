@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Review.API.csproj": {}
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.API\\Review.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Review.API.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.API\\Review.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Review.API.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.API\\Review.API.csproj",
         "projectName": "Review.API",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Review.API.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.API\\Review.API.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Application\\Review.Application.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Application\\Review.Application.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Application\\Review.Application.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Application\\Review.Application.csproj"
               },
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj"
               }
             }
           }
@@ -81,21 +86,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Application\\Review.Application.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Application\\Review.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Application\\Review.Application.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Application\\Review.Application.csproj",
         "projectName": "Review.Application",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Application\\Review.Application.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Application\\Review.Application.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Application\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,14 +112,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Review.Domain.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Review.Domain.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Domain\\Review.Domain.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Domain\\Review.Domain.csproj"
               }
             }
           }
@@ -152,21 +162,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Review.Domain.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Domain\\Review.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Review.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Domain\\Review.Domain.csproj",
         "projectName": "Review.Domain",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Review.Domain.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Domain\\Review.Domain.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -174,6 +188,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -213,21 +228,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj",
         "projectName": "Review.Infrastructure",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Infrastructure\\Review.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\nikiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,17 +254,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Application\\Review.Application.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Application\\Review.Application.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Application\\Review.Application.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Application\\Review.Application.csproj"
               },
-              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Review.Domain.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Review.Domain.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Domain\\Review.Domain.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Review\\Review.Domain\\Review.Domain.csproj"
               }
             }
           }
@@ -281,7 +301,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

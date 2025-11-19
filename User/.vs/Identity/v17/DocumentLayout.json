@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\",
+  "WorkspaceRootPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Identity\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{2E395C24-98BA-4F09-8876-C5FC82F8BBFC}|User.API\\Identity.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\user\\user.api\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{2E395C24-98BA-4F09-8876-C5FC82F8BBFC}|User.API\\Identity.API.csproj|solutionrelative:user.api\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -13,14 +14,27 @@
     {
       "AbsoluteMoniker": "D:0:0:{49A5B27A-AF1B-423F-A6AC-5616F5889BA6}|User.Application\\Identity.Application.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\user\\user.application\\identity.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{49A5B27A-AF1B-423F-A6AC-5616F5889BA6}|User.Application\\Identity.Application.csproj|solutionrelative:user.application\\identity.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+=======
+      "AbsoluteMoniker": "D:0:0:{2E395C24-98BA-4F09-8876-C5FC82F8BBFC}|User.API\\User.API.csproj|c:\\users\\nikiv\\desktop\\myproj\\zoomarket\\identity\\user.api\\user.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2E395C24-98BA-4F09-8876-C5FC82F8BBFC}|User.API\\User.API.csproj|solutionrelative:user.api\\user.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACBF09A8-EEEE-4658-BEF3-98309FCF0675}|User.Infrastructure\\Identity.Infrastructure.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\user\\user.infrastructure\\identity.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{ACBF09A8-EEEE-4658-BEF3-98309FCF0675}|User.Infrastructure\\Identity.Infrastructure.csproj|solutionrelative:user.infrastructure\\identity.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Identity.Infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Data\\IdentityDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{ACBF09A8-EEEE-4658-BEF3-98309FCF0675}|User.Infrastructure\\Identity.Infrastructure.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\user\\user.infrastructure\\data\\identitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACBF09A8-EEEE-4658-BEF3-98309FCF0675}|User.Infrastructure\\Identity.Infrastructure.csproj|solutionrelative:user.infrastructure\\data\\identitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\Identity.API.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
     }
   ],
   "DocumentGroupContainers": [
@@ -30,9 +44,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
           "Children": [
             {
+=======
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
@@ -53,6 +81,7 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             },
@@ -92,22 +121,65 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-15T12:46:13.523Z",
+=======
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Identity.API.csproj",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Identity\\User.API\\User.API.csproj",
+              "RelativeDocumentMoniker": "User.API\\User.API.csproj",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Identity\\User.API\\User.API.csproj",
+              "RelativeToolTip": "User.API\\User.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-17T10:53:06.366Z",
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+<<<<<<< HEAD
               "Title": "IdentityDbContext.cs",
               "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Data\\IdentityDbContext.cs",
               "RelativeDocumentMoniker": "User.Infrastructure\\Data\\IdentityDbContext.cs",
               "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Data\\IdentityDbContext.cs",
               "RelativeToolTip": "User.Infrastructure\\Data\\IdentityDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+=======
+              "Title": "Identity.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj",
+              "RelativeToolTip": "..\\..\\..\\MyProjects\\WebDev\\User\\User.Application\\Identity.Application.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T12:46:13.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Identity.API.csproj",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\Identity.API.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\MyProjects\\WebDev\\User\\User.API\\Identity.API.csproj",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\Identity.API.csproj",
+              "RelativeToolTip": "..\\..\\..\\MyProjects\\WebDev\\User\\User.API\\Identity.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T12:45:25.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IdentityDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Data\\IdentityDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\MyProjects\\WebDev\\User\\User.Infrastructure\\Data\\IdentityDbContext.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Data\\IdentityDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\MyProjects\\WebDev\\User\\User.Infrastructure\\Data\\IdentityDbContext.cs",
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T12:43:22.075Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "Identity.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Identity.Infrastructure.csproj",
@@ -118,6 +190,16 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-15T12:43:09.383Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 1,
+              "Title": "Identity.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Identity.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\MyProjects\\WebDev\\User\\User.Infrastructure\\Identity.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Infrastructure\\Identity.Infrastructure.csproj",
+              "RelativeToolTip": "..\\..\\..\\MyProjects\\WebDev\\User\\User.Infrastructure\\Identity.Infrastructure.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T12:43:09.383Z"
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
             }
           ]
         }

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "DbnL2FomRCM=",
   "success": false,
   "projectFilePath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.API\\Identity.API.csproj",
+=======
+  "dgSpecHash": "K6cUeK+O/oE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.API\\User.API.csproj",
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
   "expectedPackageFiles": [
     "C:\\Users\\nikiv\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
@@ -34,6 +40,7 @@
     "C:\\Users\\nikiv\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.10\\system.diagnostics.diagnosticsource.9.0.10.nupkg.sha512"
   ],
+<<<<<<< HEAD
   "logs": [
     {
       "code": "NU1104",
@@ -58,4 +65,7 @@
       ]
     }
   ]
+=======
+  "logs": []
+>>>>>>> 4e96def0889d2bc29ac4179b6467c7330ec4430b
 }
