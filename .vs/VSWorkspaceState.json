@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\User"
   ],
-  "SelectedNode": "\\Catalog.sln",
+  "SelectedNode": "\\User\\Identity.sln",
   "PreviewInSolutionExplorer": false
 }
