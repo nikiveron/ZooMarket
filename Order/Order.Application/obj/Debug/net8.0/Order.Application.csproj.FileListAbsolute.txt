@@ -29,3 +29,4 @@ C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Application\obj\Debug\net8.0
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Application\obj\Debug\net8.0\refint\Order.Application.dll
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Application\obj\Debug\net8.0\Order.Application.pdb
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Application\obj\Debug\net8.0\ref\Order.Application.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Order\Order.Application\obj\Debug\net8.0\Order.Application.sourcelink.json

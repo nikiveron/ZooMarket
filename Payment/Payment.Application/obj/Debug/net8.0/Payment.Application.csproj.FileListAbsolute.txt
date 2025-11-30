@@ -29,3 +29,4 @@ C:\Users\nikiv\Desktop\MyProj\ZooMarket\Payment\Payment.Application\obj\Debug\ne
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Payment\Payment.Application\obj\Debug\net8.0\refint\Payment.Application.dll
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Payment\Payment.Application\obj\Debug\net8.0\Payment.Application.pdb
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Payment\Payment.Application\obj\Debug\net8.0\ref\Payment.Application.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Payment\Payment.Application\obj\Debug\net8.0\Payment.Application.sourcelink.json

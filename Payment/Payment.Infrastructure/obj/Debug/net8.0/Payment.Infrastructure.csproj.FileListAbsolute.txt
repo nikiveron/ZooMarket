@@ -33,3 +33,4 @@ C:\Users\nikiv\Desktop\MyProj\ZooMarket\Payment\Payment.Infrastructure\obj\Debug
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Payment\Payment.Infrastructure\obj\Debug\net8.0\refint\Payment.Infrastructure.dll
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Payment\Payment.Infrastructure\obj\Debug\net8.0\Payment.Infrastructure.pdb
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Payment\Payment.Infrastructure\obj\Debug\net8.0\ref\Payment.Infrastructure.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Payment\Payment.Infrastructure\obj\Debug\net8.0\Payment.Infrastructure.sourcelink.json

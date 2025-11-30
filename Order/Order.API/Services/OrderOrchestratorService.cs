@@ -11,17 +11,20 @@ public class OrderOrchestratorService
     private readonly IPaymentService _paymentService;
     private readonly ICatalogService _catalogService;
     private readonly IOrderRepository _orderRepository;
+    private readonly OutboxService _outboxService;
     private readonly ILogger<OrderOrchestratorService> _logger;
 
     public OrderOrchestratorService(
         IPaymentService paymentService,
         ICatalogService catalogService,
         IOrderRepository orderRepository,
+        OutboxService outboxService,
         ILogger<OrderOrchestratorService> logger)
     {
         _paymentService = paymentService;
         _catalogService = catalogService;
         _orderRepository = orderRepository;
+        _outboxService = outboxService;
         _logger = logger;
     }
 
@@ -33,7 +36,7 @@ public class OrderOrchestratorService
 
         try
         {
-            // 1. Проверка наличия товаров
+            // Проверка наличия товаров
             _logger.LogInformation("Checking product availability");
             var availabilityResult = await _catalogService.CheckProductAvailabilityAsync(command.OrderItems);
 
@@ -45,11 +48,11 @@ public class OrderOrchestratorService
                 return OrderResult.Failed(errorMessage);
             }
 
-            // 2. Преобразуем CreateOrderItem в OrderItemData
+            // Преобразуем CreateOrderItem в OrderItemData
             var orderItemsData = command.OrderItems.Select(item =>
                 new OrderItemData(item.ProductId, item.Quantity)).ToList();
 
-            // 3. Создание заказа
+            // Создание заказа
             _logger.LogInformation("Creating order");
             var order = OrderEntity.Create(
                 command.UserId,
@@ -60,7 +63,7 @@ public class OrderOrchestratorService
             await _orderRepository.AddAsync(order);
             await _orderRepository.SaveChangesAsync();
 
-            // 4. Обработка платежа
+            // Обработка платежа
             _logger.LogInformation("Processing payment for order {OrderId}", order.Id);
             var paymentInfo = new PaymentInfo
             {
@@ -80,13 +83,24 @@ public class OrderOrchestratorService
                 return OrderResult.Failed($"Payment failed: {paymentResult.ErrorMessage}");
             }
 
-            // 5. Резервирование товаров
+            // Резервирование товаров
             _logger.LogInformation("Reserving products for order {OrderId}", order.Id);
             await _catalogService.ReserveProductsAsync(command.OrderItems);
 
-            // 6. Обновление статуса заказа
+            // Обновление статуса заказа
             order.UpdateStatus(OrderStatus.Confirmed);
             await _orderRepository.UpdateAsync(order);
+            
+            // Save event to outbox (Transaction Outbox pattern)
+            await _outboxService.AddOutboxMessageAsync("OrderCreated", new
+            {
+                OrderId = order.Id,
+                UserId = order.UserId,
+                TotalAmount = order.TotalAmount,
+                Status = order.Status.ToString(),
+                CreatedAt = order.CreatedAt
+            });
+            
             await _orderRepository.SaveChangesAsync();
 
             await transaction.CommitAsync();

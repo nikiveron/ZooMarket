@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9OOuGPpMnqI=",
+  "dgSpecHash": "J+TNkb8emTA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikiv\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
@@ -37,8 +37,8 @@
     "C:\\Users\\nikiv\\.nuget\\packages\\microsoft.identitymodel.logging\\8.0.1\\microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.1\\microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
-    "C:\\Users\\nikiv\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512",
-    "C:\\Users\\nikiv\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.3\\npgsql.entityframeworkcore.postgresql.9.0.3.nupkg.sha512",
+    "C:\\Users\\nikiv\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
+    "C:\\Users\\nikiv\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",

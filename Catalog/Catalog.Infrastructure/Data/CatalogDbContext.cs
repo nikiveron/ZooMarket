@@ -8,7 +8,7 @@ public class CatalogDbContext : DbContext
 {
     public CatalogDbContext(DbContextOptions<CatalogDbContext> options) : base(options) { }
 
-    public DbSet<Product> Products => Set<Product>();
+    public DbSet<ProductEntity> Products => Set<ProductEntity>();
     public DbSet<Category> Categories => Set<Category>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -16,7 +16,7 @@ public class CatalogDbContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
         // Дополнительные настройки
-        modelBuilder.Entity<Product>(entity =>
+        modelBuilder.Entity<ProductEntity>(entity =>
         {
             entity.HasKey(p => p.Id);
             entity.Property(p => p.Name).IsRequired().HasMaxLength(200);

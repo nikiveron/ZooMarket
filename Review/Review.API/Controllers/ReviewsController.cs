@@ -1,8 +1,10 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using Review.Application.DTOs;
-using Review.Application.Features.Reviews;
-using Review.Application.Interfaces;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Review.Domain.Entities;
+using Review.Infrastructure.Data;
+using RabbitMQ.Client;
+using System.Text;
+using System.Text.Json;
 
 namespace Review.API.Controllers;
 
@@ -10,67 +12,103 @@ namespace Review.API.Controllers;
 [Route("api/[controller]")]
 public class ReviewsController : ControllerBase
 {
-    private readonly IMediator _mediator;
-    private readonly IReviewService _reviewService;
+    private readonly ReviewDbContext _context;
+    private readonly IModel _rabbitMqChannel;
 
-    public ReviewsController(IMediator mediator, IReviewService reviewService)
+    public ReviewsController(ReviewDbContext context, IModel rabbitMqChannel)
     {
-        _mediator = mediator;
-        _reviewService = reviewService;
+        _context = context;
+        _rabbitMqChannel = rabbitMqChannel;
     }
 
-    [HttpGet("product/{productId:guid}")]
-    public async Task<ActionResult<IEnumerable<ReviewDto>>> GetReviewsByProduct(Guid productId)
+    [HttpPost]
+    public async Task<ActionResult> CreateReview([FromBody] CreateReviewRequest request)
     {
-        var reviews = await _reviewService.GetReviewsByProductIdAsync(productId);
-        return Ok(reviews);
-    }
+        var review = new ReviewEntity
+        {
+            ProductId = request.ProductId,
+            UserId = request.UserId,
+            UserName = request.UserName,
+            Rating = request.Rating,
+            Title = request.Title,
+            Comment = request.Comment,
+            IsVerifiedPurchase = request.IsVerifiedPurchase,
+            ReviewDate = DateTime.UtcNow
+        };
 
-    [HttpGet("user/{userId:guid}")]
-    public async Task<ActionResult<IEnumerable<ReviewDto>>> GetReviewsByUser(Guid userId)
-    {
-        var reviews = await _reviewService.GetReviewsByUserIdAsync(userId);
-        return Ok(reviews);
-    }
+        _context.Reviews.Add(review);
+        await _context.SaveChangesAsync();
 
-    [HttpGet("product/{productId:guid}/summary")]
-    public async Task<ActionResult<ProductReviewsSummaryDto>> GetProductReviewsSummary(Guid productId)
-    {
-        var summary = await _reviewService.GetProductReviewsSummaryAsync(productId);
-        return Ok(summary);
-    }
+        // Update summary
+        await UpdateProductSummary(review.ProductId);
 
-    [HttpGet("{id:guid}")]
-    public async Task<ActionResult<ReviewDto>> GetReview(Guid id)
-    {
-        var review = await _reviewService.GetReviewByIdAsync(id);
-        if (review == null)
-            return NotFound();
+        // Publish event to RabbitMQ
+        var eventData = new
+        {
+            ReviewId = review.Id,
+            ProductId = review.ProductId,
+            Rating = review.Rating
+        };
+        var message = JsonSerializer.Serialize(eventData);
+        var body = Encoding.UTF8.GetBytes(message);
+        _rabbitMqChannel.BasicPublish(exchange: "", routingKey: "review_events", body: body);
 
         return Ok(review);
     }
 
-    [HttpPost]
-    public async Task<ActionResult<ReviewDto>> CreateReview(CreateReviewCommand command)
+    [HttpGet("product/{productId:guid}")]
+    public async Task<ActionResult> GetReviewsByProduct(Guid productId)
     {
-        var review = await _mediator.Send(command);
-        return CreatedAtAction(nameof(GetReview), new { id = review.Id }, review);
+        var reviews = await _context.Reviews
+            .Where(r => r.ProductId == productId)
+            .OrderByDescending(r => r.ReviewDate)
+            .ToListAsync();
+        return Ok(reviews);
     }
 
-    [HttpPut("{id:guid}")]
-    public async Task<IActionResult> UpdateReview(Guid id, UpdateReviewCommand command)
+    [HttpGet("{id:guid}")]
+    public async Task<ActionResult> GetReview(Guid id)
     {
-        if (id != command.Id)
-            return BadRequest("ID mismatch");
-
-        await _mediator.Send(command);
-        return NoContent();
+        var review = await _context.Reviews.FindAsync(id);
+        if (review == null)
+            return NotFound();
+        return Ok(review);
     }
 
-    [HttpDelete("{id:guid}")]
-    public async Task<IActionResult> DeleteReview(Guid id)
+    private async Task UpdateProductSummary(Guid productId)
     {
-        await _reviewService.DeleteReviewAsync(id);
-        return NoContent();
+        var reviews = await _context.Reviews
+            .Where(r => r.ProductId == productId)
+            .ToListAsync();
+
+        var summary = await _context.ProductReviewsSummaries
+            .FirstOrDefaultAsync(s => s.ProductId == productId);
+
+        if (summary == null)
+        {
+            summary = new ProductReviewsSummary { ProductId = productId };
+            _context.ProductReviewsSummaries.Add(summary);
+        }
+
+        summary.TotalReviews = reviews.Count;
+        summary.AverageRating = reviews.Any() ? reviews.Average(r => r.Rating) : 0;
+        summary.FiveStarCount = reviews.Count(r => r.Rating == 5);
+        summary.FourStarCount = reviews.Count(r => r.Rating == 4);
+        summary.ThreeStarCount = reviews.Count(r => r.Rating == 3);
+        summary.TwoStarCount = reviews.Count(r => r.Rating == 2);
+        summary.OneStarCount = reviews.Count(r => r.Rating == 1);
+
+        await _context.SaveChangesAsync();
     }
+}
+
+public class CreateReviewRequest
+{
+    public Guid ProductId { get; set; }
+    public Guid UserId { get; set; }
+    public string UserName { get; set; } = string.Empty;
+    public int Rating { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string Comment { get; set; } = string.Empty;
+    public bool IsVerifiedPurchase { get; set; }
 }

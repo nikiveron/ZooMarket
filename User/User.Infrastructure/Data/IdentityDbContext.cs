@@ -1,21 +1,21 @@
-﻿using Identity.Domain.Entities;
+﻿using User.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace Identity.Infrastructure.Data;
+namespace User.Infrastructure.Data;
 
 public class IdentityDbContext : DbContext
 {
     public IdentityDbContext(DbContextOptions<IdentityDbContext> options) : base(options) { }
 
-    public DbSet<User> Users => Set<User>();
+    public DbSet<UserEntity> Users => Set<UserEntity>();
     public DbSet<UserClaim> UserClaims => Set<UserClaim>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-        modelBuilder.Entity<User>(entity =>
+        modelBuilder.Entity<UserEntity>(entity =>
         {
             entity.HasKey(u => u.Id);
             entity.Property(u => u.Email).IsRequired().HasMaxLength(256);

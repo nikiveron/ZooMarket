@@ -33,3 +33,4 @@ C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Infrastructure\obj\Debug\net8.
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Infrastructure\obj\Debug\net8.0\refint\User.Infrastructure.dll
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Infrastructure\obj\Debug\net8.0\User.Infrastructure.pdb
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\User\User.Infrastructure\obj\Debug\net8.0\ref\User.Infrastructure.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\User\User.Infrastructure\obj\Debug\net8.0\User.Infrastructure.sourcelink.json

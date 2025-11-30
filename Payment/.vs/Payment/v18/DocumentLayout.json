@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Payment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4411E0C2-DC4B-4FAD-B6EE-BC6421684AC7}|Payment.API\\Payment.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\payment\\payment.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4411E0C2-DC4B-4FAD-B6EE-BC6421684AC7}|Payment.API\\Payment.API.csproj|solutionrelative:payment.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B42238BE-80C8-44CC-9613-491300875EED}|Payment.Domain\\Payment.Domain.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\payment\\payment.domain\\entities\\paymententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B42238BE-80C8-44CC-9613-491300875EED}|Payment.Domain\\Payment.Domain.csproj|solutionrelative:payment.domain\\entities\\paymententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentEntity.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Payment\\Payment.Domain\\Entities\\PaymentEntity.cs",
+              "RelativeDocumentMoniker": "Payment.Domain\\Entities\\PaymentEntity.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Payment\\Payment.Domain\\Entities\\PaymentEntity.cs",
+              "RelativeToolTip": "Payment.Domain\\Entities\\PaymentEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T12:39:15.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Payment\\Payment.API\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "Payment.API\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Payment\\Payment.API\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "Payment.API\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T12:39:06.877Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

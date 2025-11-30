@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.API\\Order.API.csproj": {}
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Order.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.API\\Order.API.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Order.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.API\\Order.API.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Order.API.csproj",
         "projectName": "Order.API",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.API\\Order.API.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Order.API.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.API\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Application\\Order.Application.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Application\\Order.Application.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Application\\Order.Application.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Application\\Order.Application.csproj"
               },
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj"
               }
             }
           }
@@ -52,7 +51,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -80,7 +79,11 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -106,18 +109,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Application\\Order.Application.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Application\\Order.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Application\\Order.Application.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Application\\Order.Application.csproj",
         "projectName": "Order.Application",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Application\\Order.Application.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Application\\Order.Application.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Application\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -132,15 +135,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Domain\\Order.Domain.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Domain\\Order.Domain.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Domain\\Order.Domain.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Domain\\Order.Domain.csproj"
               }
             }
           }
@@ -155,7 +157,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -182,18 +184,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Domain\\Order.Domain.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Domain\\Order.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Domain\\Order.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Domain\\Order.Domain.csproj",
         "projectName": "Order.Domain",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Domain\\Order.Domain.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Domain\\Order.Domain.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Domain\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -208,7 +210,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -227,7 +228,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -248,18 +249,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj",
         "projectName": "Order.Infrastructure",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\Order.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -274,18 +275,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Application\\Order.Application.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Application\\Order.Application.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Application\\Order.Application.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Application\\Order.Application.csproj"
               },
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Domain\\Order.Domain.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Order\\Order.Domain\\Order.Domain.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Domain\\Order.Domain.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Domain\\Order.Domain.csproj"
               }
             }
           }
@@ -300,7 +300,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -324,7 +324,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -343,7 +343,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

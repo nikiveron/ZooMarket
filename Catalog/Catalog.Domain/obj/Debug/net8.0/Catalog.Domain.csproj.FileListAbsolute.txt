@@ -21,3 +21,4 @@ C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\refint\Catalog.Domain.dll
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.pdb
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Catalog\Catalog.Domain\obj\Debug\net8.0\ref\Catalog.Domain.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.Domain\obj\Debug\net8.0\Catalog.Domain.sourcelink.json

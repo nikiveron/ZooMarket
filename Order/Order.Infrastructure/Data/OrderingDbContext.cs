@@ -13,6 +13,7 @@ public class OrderingDbContext : DbContext
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();
     public DbSet<Cart> Carts => Set<Cart>();
     public DbSet<CartItem> CartItems => Set<CartItem>();
+    public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -43,6 +44,14 @@ public class OrderingDbContext : DbContext
                   .WithMany(o => o.OrderItems)
                   .HasForeignKey(oi => oi.OrderId)
                   .OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<OutboxMessage>(entity =>
+        {
+            entity.HasKey(om => om.Id);
+            entity.Property(om => om.EventType).IsRequired().HasMaxLength(200);
+            entity.Property(om => om.Payload).IsRequired();
+            entity.HasIndex(om => new { om.IsProcessed, om.CreatedAt });
         });
     }
 }

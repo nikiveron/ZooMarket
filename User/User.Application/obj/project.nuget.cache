@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gCAaOjrAjGk=",
+  "dgSpecHash": "0C3HQ7RuLo8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\User\\User.Application\\User.Application.csproj",
+  "projectFilePath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\User\\User.Application\\User.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikiv\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
     "C:\\Users\\nikiv\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

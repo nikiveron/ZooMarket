@@ -21,3 +21,4 @@ C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Domain\obj\Debug\net8.0\Orde
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Domain\obj\Debug\net8.0\refint\Order.Domain.dll
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Domain\obj\Debug\net8.0\Order.Domain.pdb
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Domain\obj\Debug\net8.0\ref\Order.Domain.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Order\Order.Domain\obj\Debug\net8.0\Order.Domain.sourcelink.json

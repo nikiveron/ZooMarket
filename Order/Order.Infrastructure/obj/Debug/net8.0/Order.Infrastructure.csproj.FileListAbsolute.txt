@@ -35,3 +35,6 @@ C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Infrastructure\obj\Debug\net
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Infrastructure\obj\Debug\net8.0\ref\Order.Infrastructure.dll
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Infrastructure\bin\Debug\net8.0\Order.Infrastructure.runtimeconfig.json
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.genruntimeconfig.cache
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Order\Order.Infrastructure\bin\Debug\net8.0\Order.Infrastructure.runtimeconfig.json
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.sourcelink.json
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Order\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.genruntimeconfig.cache

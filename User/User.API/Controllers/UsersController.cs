@@ -1,69 +1,57 @@
-﻿using Identity.Application.DTOs;
-using Identity.Application.Features.Users;
-using Identity.Application.Interfaces;
-using MediatR;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using User.Infrastructure.Data;
 
-namespace Identity.API.Controllers;
+namespace User.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 [Authorize]
 public class UsersController : ControllerBase
 {
-    private readonly IMediator _mediator;
-    private readonly IUserService _userService;
+    private readonly UserDbContext _context;
 
-    public UsersController(IMediator mediator, IUserService userService)
+    public UsersController(UserDbContext context)
     {
-        _mediator = mediator;
-        _userService = userService;
+        _context = context;
     }
 
     [HttpGet]
     [Authorize(Roles = "Admin")]
-    public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
+    public async Task<ActionResult> GetUsers()
     {
-        var users = await _userService.GetAllUsersAsync();
+        var users = await _context.Users.Select(u => new
+        {
+            u.Id,
+            u.Email,
+            u.FirstName,
+            u.LastName,
+            u.Role,
+            u.IsActive
+        }).ToListAsync();
         return Ok(users);
     }
 
     [HttpGet("{id:guid}")]
-    public async Task<ActionResult<UserDto>> GetUser(Guid id)
+    public async Task<ActionResult> GetUser(Guid id)
     {
-        var user = await _userService.GetUserByIdAsync(id);
+        var user = await _context.Users
+            .Where(u => u.Id == id)
+            .Select(u => new
+            {
+                u.Id,
+                u.Email,
+                u.FirstName,
+                u.LastName,
+                u.Role,
+                u.IsActive
+            })
+            .FirstOrDefaultAsync();
+
         if (user == null)
             return NotFound();
 
         return Ok(user);
-    }
-
-    [HttpGet("email/{email}")]
-    public async Task<ActionResult<UserDto>> GetUserByEmail(string email)
-    {
-        var user = await _userService.GetUserByEmailAsync(email);
-        if (user == null)
-            return NotFound();
-
-        return Ok(user);
-    }
-
-    [HttpPut("{id:guid}")]
-    public async Task<IActionResult> UpdateUser(Guid id, UpdateUserCommand command)
-    {
-        if (id != command.Id)
-            return BadRequest("ID mismatch");
-
-        await _mediator.Send(command);
-        return NoContent();
-    }
-
-    [HttpDelete("{id:guid}")]
-    [Authorize(Roles = "Admin")]
-    public async Task<IActionResult> DeleteUser(Guid id)
-    {
-        await _userService.DeleteUserAsync(id);
-        return NoContent();
     }
 }

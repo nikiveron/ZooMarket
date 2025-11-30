@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.API\\Catalog.API.csproj": {}
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\Catalog.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.API\\Catalog.API.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\Catalog.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.API\\Catalog.API.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\Catalog.API.csproj",
         "projectName": "Catalog.API",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.API\\Catalog.API.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\Catalog.API.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.API\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Application\\Catalog.Application.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Catalog.Application.csproj"
               },
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj"
               }
             }
           }
@@ -52,7 +51,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -61,6 +60,32 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.16, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -86,18 +111,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Application\\Catalog.Application.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Catalog.Application.csproj",
         "projectName": "Catalog.Application",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Application\\Catalog.Application.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Catalog.Application.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Application\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -112,15 +137,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj"
               }
             }
           }
@@ -135,7 +159,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -162,18 +186,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj",
         "projectName": "Catalog.Domain",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Domain\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -188,7 +212,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -207,7 +230,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -228,18 +251,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj": {
+    "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj",
         "projectName": "Catalog.Infrastructure",
-        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Infrastructure\\Catalog.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\nikiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -254,18 +277,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Application\\Catalog.Application.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Catalog.Application.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Catalog.Application.csproj"
               },
-              "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
-                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProj\\ZooMarket\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj"
+              "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Catalog.Domain.csproj"
               }
             }
           }
@@ -280,7 +302,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -311,7 +333,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -29,3 +29,4 @@ C:\Users\nikiv\Desktop\MyProj\ZooMarket\Review\Review.Application\obj\Debug\net8
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Review\Review.Application\obj\Debug\net8.0\refint\Review.Application.dll
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Review\Review.Application\obj\Debug\net8.0\Review.Application.pdb
 C:\Users\nikiv\Desktop\MyProj\ZooMarket\Review\Review.Application\obj\Debug\net8.0\ref\Review.Application.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Review\Review.Application\obj\Debug\net8.0\Review.Application.sourcelink.json

@@ -1,9 +1,36 @@
+using Microsoft.EntityFrameworkCore;
+using Payment.Infrastructure.Data;
+using RabbitMQ.Client;
+using System.Text;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Database
+builder.Services.AddDbContext<PaymentDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// RabbitMQ
+var rabbitMqHost = builder.Configuration["RabbitMQ:HostName"] ?? "localhost";
+var rabbitMqPort = int.Parse(builder.Configuration["RabbitMQ:Port"] ?? "5672");
+builder.Services.AddSingleton<IConnectionFactory>(sp => new ConnectionFactory
+{
+    HostName = rabbitMqHost,
+    Port = rabbitMqPort,
+    UserName = "guest",
+    Password = "guest"
+});
+builder.Services.AddSingleton<IConnection>(sp => sp.GetRequiredService<IConnectionFactory>().CreateConnection());
+builder.Services.AddSingleton<IModel>(sp =>
+{
+    var channel = sp.GetRequiredService<IConnection>().CreateModel();
+    channel.QueueDeclare("payment_events", durable: true, exclusive: false, autoDelete: false);
+    return channel;
+});
 
 var app = builder.Build();
 
@@ -16,29 +43,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.MapControllers();
 
-app.MapGet("/weatherforecast", () =>
+// Ensure database is created
+using (var scope = app.Services.CreateScope())
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+    var dbContext = scope.ServiceProvider.GetRequiredService<PaymentDbContext>();
+    dbContext.Database.EnsureCreated();
+}
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
