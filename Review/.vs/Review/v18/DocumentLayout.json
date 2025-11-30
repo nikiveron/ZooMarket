@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{944FD89E-A9A4-4CDB-BB69-073B4DBAE216}|Review.API\\Review.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\review\\review.api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{944FD89E-A9A4-4CDB-BB69-073B4DBAE216}|Review.API\\Review.API.csproj|solutionrelative:review.api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{944FD89E-A9A4-4CDB-BB69-073B4DBAE216}|Review.API\\Review.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\review\\review.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{944FD89E-A9A4-4CDB-BB69-073B4DBAE216}|Review.API\\Review.API.csproj|solutionrelative:review.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B567004F-2F99-4A7C-9AA7-F3D029423EA6}|Review.Domain\\Review.Domain.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\review\\review.domain\\entities\\reviewentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B567004F-2F99-4A7C-9AA7-F3D029423EA6}|Review.Domain\\Review.Domain.csproj|solutionrelative:review.domain\\entities\\reviewentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{944FD89E-A9A4-4CDB-BB69-073B4DBAE216}|Review.API\\Review.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\review\\review.api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{944FD89E-A9A4-4CDB-BB69-073B4DBAE216}|Review.API\\Review.API.csproj|solutionrelative:review.api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Program.cs",
+              "RelativeDocumentMoniker": "Review.API\\Program.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Program.cs*",
+              "RelativeToolTip": "Review.API\\Program.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T16:48:00.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Review.API\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Review.API\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T16:44:21.79Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -41,30 +67,12 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReviewEntity.cs",
-              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Entities\\ReviewEntity.cs",
-              "RelativeDocumentMoniker": "Review.Domain\\Entities\\ReviewEntity.cs",
-              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.Domain\\Entities\\ReviewEntity.cs",
-              "RelativeToolTip": "Review.Domain\\Entities\\ReviewEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T12:38:12.525Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReviewsController.cs",
-              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Controllers\\ReviewsController.cs",
-              "RelativeDocumentMoniker": "Review.API\\Controllers\\ReviewsController.cs",
-              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Review\\Review.API\\Controllers\\ReviewsController.cs*",
-              "RelativeToolTip": "Review.API\\Controllers\\ReviewsController.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAUwBoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T12:38:06.24Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }

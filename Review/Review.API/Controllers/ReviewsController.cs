@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using RabbitMQ.Client;
 using Review.Domain.Entities;
 using Review.Infrastructure.Data;
-using RabbitMQ.Client;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 
@@ -10,6 +12,7 @@ namespace Review.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class ReviewsController : ControllerBase
 {
     private readonly ReviewDbContext _context;
@@ -24,6 +27,14 @@ public class ReviewsController : ControllerBase
     [HttpPost]
     public async Task<ActionResult> CreateReview([FromBody] CreateReviewRequest request)
     {
+        var requestedUserId = request.UserId;
+        var currentUserIdString = User.FindFirstValue(ClaimTypes.NameIdentifier); // Проверяем что токен был валиден и claim реально существует
+        if (string.IsNullOrWhiteSpace(currentUserIdString) || !Guid.TryParse(currentUserIdString, out var currentUserId))
+            return Forbid();
+
+        if (User.IsInRole("Admin") == false && requestedUserId != currentUserId)
+            return Forbid();
+
         var review = new ReviewEntity
         {
             ProductId = request.ProductId,
@@ -57,6 +68,7 @@ public class ReviewsController : ControllerBase
     }
 
     [HttpGet("product/{productId:guid}")]
+    [AllowAnonymous]
     public async Task<ActionResult> GetReviewsByProduct(Guid productId)
     {
         var reviews = await _context.Reviews
@@ -67,6 +79,7 @@ public class ReviewsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [AllowAnonymous]
     public async Task<ActionResult> GetReview(Guid id)
     {
         var review = await _context.Reviews.FindAsync(id);

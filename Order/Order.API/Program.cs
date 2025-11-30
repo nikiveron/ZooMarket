@@ -1,18 +1,20 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Order.API.Services;
 using Order.Application.Interfaces;
-using Order.Domain.Common;
-using Order.Domain.Entities;
 using Order.Infrastructure.Data;
-using Order.Infrastructure.Repositories;
 using RabbitMQ.Client;
 using System.Text;
-using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<OrderingDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
+
 
 // RabbitMQ
 var rabbitMqHost = builder.Configuration["RabbitMQ:HostName"] ?? "localhost";
@@ -35,13 +37,68 @@ builder.Services.AddSingleton<IModel>(sp =>
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new() { Title = "Order API", Version = "v1" });
+
+    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Description = "Entry JWT token: Bearer {token}",
+        Name = "Authorization",
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT"
+    });
+
+    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+
+// JWT Authentication
+var jwtKey = builder.Configuration["Jwt:Key"] ?? "YourSuperSecretKeyThatIsAtLeast32CharactersLong!";
+var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "ZoomarketIdentity";
+var jwtAudience = builder.Configuration["Jwt:Audience"] ?? "ZoomarketServices";
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtIssuer,
+        ValidAudience = jwtAudience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+    };
+});
+
+builder.Services.AddAuthorization();
 
 // DI for repositories and services
 builder.Services.AddScoped<Order.Domain.Common.IOrderRepository, Order.Infrastructure.Repositories.OrderRepository>();
 builder.Services.AddScoped<Order.Application.Interfaces.IOrderService, Order.API.Services.OrderService>();
 builder.Services.AddScoped<Order.Application.Interfaces.ICatalogService, Order.API.Services.CatalogServiceStub>();
 builder.Services.AddScoped<Order.Application.Interfaces.IPaymentService, Order.API.Services.PaymentServiceStub>();
+builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<Order.API.Services.OrderOrchestratorService>();
 builder.Services.AddScoped<Order.API.Services.OutboxService>();
 
@@ -58,6 +115,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

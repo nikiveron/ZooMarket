@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\User",
-    "\\User\\User.API",
-    "\\User\\User.API\\Controllers"
+    "\\Catalog",
+    "\\Order\\Order.API",
+    "\\Order\\Order.API\\Services",
+    "\\Payment\\Payment.API",
+    "\\User\\User.API"
   ],
-  "SelectedNode": "\\User\\User.API\\Controllers\\AuthController.cs",
+  "SelectedNode": "\\Catalog\\Catalog.sln",
   "PreviewInSolutionExplorer": false
 }

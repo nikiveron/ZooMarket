@@ -3,11 +3,13 @@ using Catalog.Application.Features.Categories;
 using Catalog.Application.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Catalog.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize(Roles = "Admin")]
 public class CategoriesController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -20,6 +22,7 @@ public class CategoriesController : ControllerBase
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<ActionResult<IEnumerable<CategoryDto>>> GetCategories()
     {
         var categories = await _categoryService.GetAllCategoriesAsync();
@@ -27,6 +30,7 @@ public class CategoriesController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [AllowAnonymous]
     public async Task<ActionResult<CategoryDto>> GetCategory(Guid id)
     {
         var category = await _categoryService.GetCategoryByIdAsync(id);

@@ -29,7 +29,7 @@ public class ProductService : IProductService
     {
         var cacheKey = $"{CachePrefix}{id}";
         var cached = await _cache.GetStringAsync(cacheKey);
-        
+
         if (!string.IsNullOrEmpty(cached))
         {
             return JsonSerializer.Deserialize<ProductDto>(cached)!;
@@ -39,7 +39,7 @@ public class ProductService : IProductService
         if (product == null) return null!;
 
         var dto = MapToDto(product);
-        
+
         var options = new DistributedCacheEntryOptions
         {
             AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)

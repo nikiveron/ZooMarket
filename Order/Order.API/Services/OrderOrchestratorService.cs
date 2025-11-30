@@ -70,8 +70,8 @@ public class OrderOrchestratorService
                 OrderId = order.Id,
                 Amount = order.TotalAmount,
                 Currency = "USD",
-                PaymentMethod = "CreditCard", // В реальном приложении из command
-                CustomerEmail = "customer@example.com" // В реальном приложении из User service
+                PaymentMethod = "CreditCard", 
+                CustomerEmail = "customer@example.com" 
             };
 
             var paymentResult = await _paymentService.ProcessPaymentAsync(paymentInfo);

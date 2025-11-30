@@ -217,3 +217,7 @@ C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.API\bin\Debug\net8.0\zh
 C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.API\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.API\obj\Debug\net8.0\swae.build.ex.cache
 C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nikiv\Desktop\MyProjects\WebDev\Catalog\Catalog.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

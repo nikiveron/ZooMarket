@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5135E3A5-FCF2-4BC7-996C-62FAA7DD1622}|Catalog.API\\Catalog.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\catalog\\catalog.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5135E3A5-FCF2-4BC7-996C-62FAA7DD1622}|Catalog.API\\Catalog.API.csproj|solutionrelative:catalog.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CB1507D-0386-4C82-8C5A-60E83058A386}|Catalog.Application\\Catalog.Application.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\catalog\\catalog.application\\features\\categories\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CB1507D-0386-4C82-8C5A-60E83058A386}|Catalog.Application\\Catalog.Application.csproj|solutionrelative:catalog.application\\features\\categories\\createcategorycommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8871042C-0E95-4F66-BB46-92DED73B4DCF}|Catalog.Infrastructure\\Catalog.Infrastructure.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\catalog\\catalog.infrastructure\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8871042C-0E95-4F66-BB46-92DED73B4DCF}|Catalog.Infrastructure\\Catalog.Infrastructure.csproj|solutionrelative:catalog.infrastructure\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5135E3A5-FCF2-4BC7-996C-62FAA7DD1622}|Catalog.API\\Catalog.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\catalog\\catalog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5135E3A5-FCF2-4BC7-996C-62FAA7DD1622}|Catalog.API\\Catalog.API.csproj|solutionrelative:catalog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,19 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductEntity.cs",
-              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Entities\\ProductEntity.cs",
-              "RelativeDocumentMoniker": "Catalog.Domain\\Entities\\ProductEntity.cs",
-              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Entities\\ProductEntity.cs",
-              "RelativeToolTip": "Catalog.Domain\\Entities\\ProductEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Infrastructure\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Catalog.Infrastructure\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Infrastructure\\Services\\ProductService.cs",
+              "RelativeToolTip": "Catalog.Infrastructure\\Services\\ProductService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAADwvwYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T12:40:25.654Z",
+              "WhenOpened": "2025-11-30T19:25:14.37Z",
               "EditorCaption": ""
             },
             {
@@ -63,13 +75,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCategoryCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Features\\Categories\\CreateCategoryCommandHandler.cs",
+              "RelativeDocumentMoniker": "Catalog.Application\\Features\\Categories\\CreateCategoryCommandHandler.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Application\\Features\\Categories\\CreateCategoryCommandHandler.cs",
+              "RelativeToolTip": "Catalog.Application\\Features\\Categories\\CreateCategoryCommandHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:23:31.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Catalog.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Catalog.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:22:58.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductEntity.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Entities\\ProductEntity.cs",
+              "RelativeDocumentMoniker": "Catalog.Domain\\Entities\\ProductEntity.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.Domain\\Entities\\ProductEntity.cs",
+              "RelativeToolTip": "Catalog.Domain\\Entities\\ProductEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T12:40:25.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\Program.cs",
               "RelativeDocumentMoniker": "Catalog.API\\Program.cs",
               "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Catalog\\Catalog.API\\Program.cs",
               "RelativeToolTip": "Catalog.API\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAswD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T12:40:13.716Z",
               "EditorCaption": ""

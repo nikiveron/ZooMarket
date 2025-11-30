@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Payment.Domain.Entities;
 using Payment.Infrastructure.Data;
 using RabbitMQ.Client;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 
@@ -10,20 +12,30 @@ namespace Payment.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class PaymentsController : ControllerBase
 {
     private readonly PaymentDbContext _context;
     private readonly IModel _rabbitMqChannel;
+    private readonly HttpClient _orderServiceClient;
 
-    public PaymentsController(PaymentDbContext context, IModel rabbitMqChannel)
+    public PaymentsController(PaymentDbContext context, IModel rabbitMqChannel, HttpClient orderServiceClient)
     {
         _context = context;
         _rabbitMqChannel = rabbitMqChannel;
+        _orderServiceClient = orderServiceClient;
     }
 
     [HttpPost]
     public async Task<ActionResult> ProcessPayment([FromBody] ProcessPaymentRequest request)
     {
+        var currentUserIdString = User.FindFirstValue(ClaimTypes.NameIdentifier); // Проверяем что токен был валиден и claim реально существует
+        if (string.IsNullOrWhiteSpace(currentUserIdString) || !Guid.TryParse(currentUserIdString, out var currentUserId))
+            return Forbid();
+
+        if (User.IsInRole("Admin") == false)
+            return Forbid();
+
         var payment = new PaymentEntity
         {
             OrderId = request.OrderId,
@@ -60,9 +72,17 @@ public class PaymentsController : ControllerBase
     [HttpGet("{id:guid}")]
     public async Task<ActionResult> GetPayment(Guid id)
     {
+        var currentUserIdString = User.FindFirstValue(ClaimTypes.NameIdentifier); // Проверяем что токен был валиден и claim реально существует
+        if (string.IsNullOrWhiteSpace(currentUserIdString) || !Guid.TryParse(currentUserIdString, out var currentUserId))
+            return Forbid();
+
         var payment = await _context.Payments.FindAsync(id);
         if (payment == null)
             return NotFound();
+
+        Guid? orderOwnerId = await GetOrderOwnerId(payment.OrderId); // вручную из Orders БД или через OrderService
+        if (!User.IsInRole("Admin") && orderOwnerId != currentUserId && orderOwnerId != null)
+            return Forbid();
 
         return Ok(payment);
     }
@@ -70,13 +90,33 @@ public class PaymentsController : ControllerBase
     [HttpGet("order/{orderId:guid}")]
     public async Task<ActionResult> GetPaymentByOrder(Guid orderId)
     {
+        var currentUserIdString = User.FindFirstValue(ClaimTypes.NameIdentifier); // Проверяем что токен был валиден и claim реально существует
+        if (string.IsNullOrWhiteSpace(currentUserIdString) || !Guid.TryParse(currentUserIdString, out var currentUserId))
+            return Forbid();
+
         var payment = await _context.Payments
             .FirstOrDefaultAsync(p => p.OrderId == orderId);
-        
+
         if (payment == null)
             return NotFound();
 
+        Guid? orderOwnerId = await GetOrderOwnerId(payment.OrderId); // вручную из Orders БД или через OrderService
+        if (!User.IsInRole("Admin") && orderOwnerId != currentUserId && orderOwnerId != null)
+            return Forbid();
+
         return Ok(payment);
+    }
+
+    private async Task<Guid?> GetOrderOwnerId(Guid orderId)
+    {
+        var response = await _orderServiceClient.GetAsync($"/api/orders/owner/{orderId}");
+        if (!response.IsSuccessStatusCode)
+            return null;
+
+        var userIdString = await response.Content.ReadAsStringAsync();
+        if (Guid.TryParse(userIdString.Trim('"'), out var userId))
+            return userId;
+        return null;
     }
 }
 

@@ -3,11 +3,13 @@ using Catalog.Application.Features.Products;
 using Catalog.Application.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Catalog.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize(Roles = "Admin")]
 public class ProductsController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -20,6 +22,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<ActionResult<IEnumerable<ProductDto>>> GetProducts()
     {
         var products = await _productService.GetAllProductsAsync();
@@ -27,6 +30,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [AllowAnonymous]
     public async Task<ActionResult<ProductDto>> GetProduct(Guid id)
     {
         var product = await _productService.GetProductByIdAsync(id);
@@ -37,6 +41,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet("category/{categoryId:guid}")]
+    [AllowAnonymous]
     public async Task<ActionResult<IEnumerable<ProductDto>>> GetProductsByCategory(Guid categoryId)
     {
         var products = await _productService.GetProductsByCategoryAsync(categoryId);

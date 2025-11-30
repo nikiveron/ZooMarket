@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC066DC1-366E-4389-A5B2-C94D4E01ED48}|Order.Infrastructure\\Order.Infrastructure.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.infrastructure\\data\\orderingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC066DC1-366E-4389-A5B2-C94D4E01ED48}|Order.Infrastructure\\Order.Infrastructure.csproj|solutionrelative:order.infrastructure\\data\\orderingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.api\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|solutionrelative:order.api\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|solutionrelative:order.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|solutionrelative:order.api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.api\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|solutionrelative:order.api\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|solutionrelative:order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.api\\services\\orderorchestratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|solutionrelative:order.api\\services\\orderorchestratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|solutionrelative:order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|c:\\users\\nikiv\\desktop\\myprojects\\webdev\\order\\order.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A799D524-EFE3-4385-A372-A092AA5FE673}|Order.API\\Order.API.csproj|solutionrelative:order.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 152,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "Order.API\\Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Services\\CartService.cs",
+              "RelativeToolTip": "Order.API\\Services\\CartService.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAswHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T18:02:30.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Order.API\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Services\\OrderService.cs",
+              "RelativeToolTip": "Order.API\\Services\\OrderService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T18:00:26.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Order.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Order.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T12:39:40.058Z"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -58,15 +104,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderingDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\Data\\OrderingDbContext.cs",
-              "RelativeDocumentMoniker": "Order.Infrastructure\\Data\\OrderingDbContext.cs",
-              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.Infrastructure\\Data\\OrderingDbContext.cs",
-              "RelativeToolTip": "Order.Infrastructure\\Data\\OrderingDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBEAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CartsController.cs",
+              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Controllers\\CartsController.cs",
+              "RelativeDocumentMoniker": "Order.API\\Controllers\\CartsController.cs",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Controllers\\CartsController.cs",
+              "RelativeToolTip": "Order.API\\Controllers\\CartsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T12:39:40.016Z",
+              "WhenOpened": "2025-11-30T16:22:39.158Z",
               "EditorCaption": ""
             },
             {
@@ -75,35 +121,25 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Program.cs",
               "RelativeDocumentMoniker": "Order.API\\Program.cs",
-              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Program.cs",
-              "RelativeToolTip": "Order.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Program.cs*",
+              "RelativeToolTip": "Order.API\\Program.cs*",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAwwGQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T12:39:40.053Z"
+              "WhenOpened": "2025-11-30T12:39:40.053Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Order.API\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Order.API\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvy8AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T12:39:40.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OrderOrchestratorService.cs",
               "DocumentMoniker": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Services\\OrderOrchestratorService.cs",
               "RelativeDocumentMoniker": "Order.API\\Services\\OrderOrchestratorService.cs",
               "ToolTip": "C:\\Users\\nikiv\\Desktop\\MyProjects\\WebDev\\Order\\Order.API\\Services\\OrderOrchestratorService.cs",
               "RelativeToolTip": "Order.API\\Services\\OrderOrchestratorService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T12:39:40.063Z"
+              "WhenOpened": "2025-11-30T12:39:40.063Z",
+              "EditorCaption": ""
             }
           ]
         }
